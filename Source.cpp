@@ -81,7 +81,7 @@ private:
     Board<rows, columns> board_;                            // Tablero
     std::vector<Position> snake_    = { Position(std::size_t(columns / 2), std::size_t(rows / 2)) };   // Serpiente
     Direction current_direction_    = Direction::kNone;     // Dirección actual de la serpiente
-    Direction keys_[2]              = { Direction::kNone }; // Arreglo de teclas presionadas
+    Direction keys_[2]              = { Direction::kNone, Direction::kNone }; // Arreglo de teclas presionadas
     Position target_                = Position(0, 0);       // Punto objetivo
     std::size_t difficulty_         = 0;                    // Dificultad de la serpiente
     clock_t time_                   = 0;                    // Contador tiempo
