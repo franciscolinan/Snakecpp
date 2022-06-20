@@ -340,7 +340,7 @@ auto main() -> int
 
     // Menú
     //
-    while (difficulty != 1 && difficulty != 2 && difficulty != 3 && difficulty != 4)
+    while (difficulty < 1 || difficulty > 4)
     {
         std::cout << "--- Juego snake ---\n";
         std::cout << "Seleccione la dificultad:\n";
